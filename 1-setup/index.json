@@ -1,0 +1,55 @@
+{
+    "pathwayTitle": "Apache OpenWhisk on OpenShift",
+    "icon": "fa-openshift",
+    "title": "Build and Deploy Apache OpenWhisk Application on OpenShift",
+    "description": "In this scenario you will learn how to build and deploy Apache OpenWhisk functions on OpenShift",
+    "difficulty": "beginner",
+    "time": "5 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1",
+                "text": "01-login-to-openshift.md"
+            },
+            {
+                "title": "Step 2",
+                "text": "02-setup-openwhisk-on-openshift.md"
+            },
+            {
+                "title": "Step 3",
+                "text": "03-verify-setup.md"
+            }
+        ],
+        "intro": {
+            "text": "00-intro.md",
+            "courseData": "env-init.sh",
+            "code": "set-env.sh"
+        },
+        "finish": {
+            "text": "99-outro.md"
+        }
+    },
+    "files": [],
+    "environment": {
+        "showdashboard": true,
+        "dashboards": [
+            {
+                "name": "Local Web Browser",
+                "port": 8080
+            },
+            {
+                "name": "OpenShift Console",
+                "port": 8443
+            }
+        ],
+        "uilayout": "editor-terminal",
+        "uisettings": "java",
+        "hideintro": false,
+        "uieditorpath": "/root/helloboot",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "openshift-middleware",
+        "port": 8443
+    }
+}
