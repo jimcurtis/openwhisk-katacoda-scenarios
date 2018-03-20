@@ -1,7 +1,7 @@
 {
     "pathwayTitle": "Apache OpenWhisk on OpenShift",
     "icon": "fa-openshift",
-    "title": "Introduction",
+    "title": "Getting Started with OpenWhisk on OpenShift",
     "description": "Deploying Apache OpenWhisk on OpenShift",
     "difficulty": "beginner",
     "time": "5 minutes",
