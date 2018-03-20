@@ -4,13 +4,13 @@ Having successfully developed and deployed a Java Function on to [Apache OpenWhi
 
 **1. Update Java function**
 
-Lets open the Java source file **/root/projects/hello-openwhisk/src/main/java/com/example/FunctionApp.java**
+Lets open the Java source file **~/projects/hello-openwhisk/src/main/java/com/example/FunctionApp.java**
 
-``/root/projects/hello-openwhisk/src/main/java/com/example/FunctionApp.java``{{open}}
+``~/projects/hello-openwhisk/src/main/java/com/example/FunctionApp.java``{{open}}
 
 Once the created file is opened in the editor, you can then copy the content below into the file (or use the `Copy to editor` button):
 
-<pre class="file" data-filename="/root/projects/hello-openwhisk/src/main/java/com/example/FunctionApp.java" data-target="replace">
+<pre class="file" data-filename="~/projects/hello-openwhisk/src/main/java/com/example/FunctionApp.java" data-target="replace">
 package com.example;
 
 import com.google.gson.JsonObject;
@@ -29,13 +29,13 @@ public class FunctionApp {
 
 **2. Update Java function Test Class**
 
-Since we have updated the Java Source we also need to update the test class as well, let's open the Java Test source file **/root/projects/hello-openwhisk/src/test/java/com/example/FunctionAppTest.java**
+Since we have updated the Java Source we also need to update the test class as well, let's open the Java Test source file **~/projects/hello-openwhisk/src/test/java/com/example/FunctionAppTest.java**
 
-``/root/projects/hello-openwhisk/src/tes/java/com/example/FunctionAppTest.java``{{open}}
+``~/projects/hello-openwhisk/src/test/java/com/example/FunctionAppTest.java``{{open}}
 
 Once the file is opened in the editor, you can then copy the content below into the file (or use the `Copy to editor` button):
 
-<pre class="file" data-filename="/root/projects/hello-openwhisk/src/test/java/com/example/FunctionAppTest.java" data-target="replace">
+<pre class="file" data-filename="~/projects/hello-openwhisk/src/test/java/com/example/FunctionAppTest.java" data-target="replace">
 package com.example;
 
 import static org.junit.Assert.assertEquals;
