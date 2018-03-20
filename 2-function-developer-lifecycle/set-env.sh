@@ -10,4 +10,4 @@ export PATH="${OPENWHISK_HOME}/bin:${PATH}"
 
 git clone https://github.com/apache/incubator-openwhisk-devtools ~/projects/openwhisk-devtools
 
-cd ~/projects/openwhisk-devtools && mvn -DskipTests clean install
+cd ~/projects/openwhisk-devtools/java-action-archetype && mvn -DskipTests clean install
