@@ -27,11 +27,11 @@
             },
             {
                 "title": "Step 4",
-                "text": "03-update-java-function.md"
+                "text": "04-update-java-function.md"
             },
             {
                 "title": "Step 5",
-                "text": "03-delete-java-function.md"
+                "text": "05-delete-java-function.md"
             }
         ],
         "finish": {
