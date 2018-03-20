@@ -1,4 +1,4 @@
-# Deploy to OpenShift Application Platform
+# Build your first Function
 
 **1. Add fabric8 maven plugin**
 

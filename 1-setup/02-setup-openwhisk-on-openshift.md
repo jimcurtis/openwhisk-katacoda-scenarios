@@ -10,6 +10,8 @@ Deploy OpenWhisk on to OpenShift:
 
 ``oc logs -f controller-0 -n faas | grep "invoker status changed"``{{execute}}
 
+Should return response like **invoker status changed to 0 -> Healthy**
+
 **3. Configure OpenWhisk CLI**
 
 Get the default authentication and authorization credentials:
@@ -23,3 +25,7 @@ Set OpenWhisk CLI with secret and API Host:
 **3. Verify OpenWhisk CLI setup**
 
 ``wsk -i action list``{{execute}}
+
+**4. Make user developer as admin on "faas" project**
+
+``oc adm policy add-role-to-user admin developer -n faas``{{execute}}

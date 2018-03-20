@@ -1,11 +1,16 @@
 {
     "pathwayTitle": "Apache OpenWhisk on OpenShift",
     "icon": "fa-openshift",
-    "title": "Build and Deploy Apache OpenWhisk Application on OpenShift",
-    "description": "In this scenario you will learn how to build and deploy Apache OpenWhisk functions on OpenShift",
+    "title": "Introduction",
+    "description": "Deploy Apache OpenWhisk on OpenShift and validate your environment",
     "difficulty": "beginner",
     "time": "5 minutes",
     "details": {
+        "intro": {
+            "text": "00-intro.md",
+            "courseData": "env-init.sh",
+            "code": "set-env.sh"
+        },
         "steps": [
             {
                 "title": "Step 1",
@@ -20,11 +25,6 @@
                 "text": "03-verify-setup.md"
             }
         ],
-        "intro": {
-            "text": "00-intro.md",
-            "courseData": "env-init.sh",
-            "code": "set-env.sh"
-        },
         "finish": {
             "text": "99-outro.md"
         }
@@ -32,24 +32,14 @@
     "files": [],
     "environment": {
         "showdashboard": true,
-        "dashboards": [
-            {
-                "name": "Local Web Browser",
-                "port": 8080
-            },
-            {
-                "name": "OpenShift Console",
-                "port": 8443
-            }
-        ],
+        "dashboard": "Web Console",
         "uilayout": "editor-terminal",
+        "uieditorpath": "/root/projects/",
         "uisettings": "java",
-        "hideintro": false,
-        "uieditorpath": "/root/helloboot",
-        "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
     },
     "backend": {
-        "imageid": "openshift-middleware",
+        "imageid": "openshift-middleware-3-7",
         "port": 8443
     }
 }
