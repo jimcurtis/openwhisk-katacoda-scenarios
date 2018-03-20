@@ -52,7 +52,7 @@ Set OpenWhisk CLI with authentication and API Host:
 
 You can verify the settings via the command:
 
-``wsk property get``{{execute}}
+``wsk -i property get``{{execute}}
 
 **5. Verify OpenWhisk CLI setup**
 

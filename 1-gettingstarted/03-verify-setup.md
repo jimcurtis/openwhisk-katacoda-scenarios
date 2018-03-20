@@ -23,6 +23,8 @@ Take a minute and review the `greeter.js`. At this stage it is pretty simple and
 
 Lets now create the function say **greeter** to OpenWhisk:
 
+``cd /root/projects/getting-started/``{{execute}}
+
 ``wsk -i action create greeter greeter.js``{{execute}}
 
 Lets check if the function is created correctly:
