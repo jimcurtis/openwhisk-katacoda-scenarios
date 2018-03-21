@@ -18,11 +18,11 @@ Move to the project directory
 
 Click the link below to open pom.xml and update the **finalName** with value **${artifactId}** that makes us avoid long jar names during Function deployment on OpenWhisk:
 
-``~/projects/hello-openwhisk/pom.xml``{{open}}
+``/root/projects/hello-openwhisk/pom.xml``{{open}}
 
 Lets open the Java source file **/root/projects/hello-openwhisk/src/main/java/com/example/FunctionApp.java**  to review its contents, click the link below to pent the source file on editor:
 
-``~/projects/hello-openwhisk/src/main/java/com/example/FunctionApp.java``{{open}}
+``/root/projects/hello-openwhisk/src/main/java/com/example/FunctionApp.java``{{open}}
 
 All OpenWhisk Java Function class should have **main** method with signature that takes `com.google.gson.JsonObject` as parameter and returns `com.google.gson.JsonObject` as response.
 
