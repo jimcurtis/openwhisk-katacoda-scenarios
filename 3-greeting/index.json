@@ -1,7 +1,7 @@
 {
-    "pathwayTitle": "Apache OpenWhisk on OpenShift",
+    "pathwayTitle": "Simple FaaS Function via OpenWhisk on OpenShift",
     "icon": "fa-openshift",
-    "title": "Getting Started with OpenWhisk on OpenShift",
+    "title": "Simple Greeting FaaS Function via OpenWhisk on OpenShift",
     "description": "Simple Greeting Function test of OpenWhisk on OpenShift",
     "difficulty": "beginner",
     "time": "5 minutes",
