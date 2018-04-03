@@ -16,7 +16,7 @@ oc process -f https://git.io/openwhisk-template | oc create -f -
 PASSED=false
 TIMEOUT=0
 until $PASSED || [ $TIMEOUT -eq 60 ]; do
-  OC_DEPLOY_STATUS=$(oc get pods -o wide | grep -m 1 "controller" | awk '{print $3}')
+  OC_DEPLOY_STATUS=$(oc get pods -o wide | grep "controller-0" | awk '{print $3}')
   if [ "$OC_DEPLOY_STATUS" == "Running" ]; then
     PASSED=true
     break
@@ -35,6 +35,17 @@ until $PASSED || [ $TIMEOUT -eq 5 ]; do
   let TIMEOUT=TIMEOUT+1
   sleep 5
 done
+PASSED=false
+TIMEOUT=0
+until $PASSED || [ $TIMEOUT -eq 10 ]; do
+  SUCCESSFUL_JOB=$(oc get jobs -o wide | grep "$1" | awk '{print $3}')
+    if [ "$SUCCESSFUL_JOB" == "1" ]; then
+      PASSED=true
+      break
+    fi
+    let TIMEOUT=TIMEOUT+1
+    sleep 5
+  done
 
 oc patch route openwhisk --namespace faas -p '{"spec":{"tls": {"insecureEdgeTerminationPolicy": "Allow"}}}'
 AUTH_SECRET=$(oc get secret whisk.auth -o yaml | grep "system:" | awk '{print $2}' | base64 --decode)
