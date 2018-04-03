@@ -1,7 +1,6 @@
-# Add Simple Greeter Function
+# Create Simple Greeter Function
 
-Having successfully deployed [Apache OpenWhisk](https://openwhisk.apache.org/) to [OpenShift](https://openshift.com), and [OpenWhisk CLI](https://github.com/apache/incubator-openwhisk-cli/releases/) now configured to work with the OpenWhisk, we will now write a simple JavaScript function to verify and validate our deployed environment.
-
+This scenario has a setup that has started and takes almost 8 minutes to complete.  Once it is complete, the terminal prompt to the right will be ready and you can proceed with the steps below.
 
 **1. Create a simple greeter JavaScript function**
 
