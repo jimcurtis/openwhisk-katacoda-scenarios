@@ -1,4 +1,4 @@
-# A Simple FaaS Function using Apache OpenWhisk on OpenShift
+# A Simple Node.js Function using OpenWhisk on OpenShift
 
 In this scenario we will deploy a simple function on the OpenWhisk FaaS platform running on top of OpenShift.
 
